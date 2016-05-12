@@ -1,0 +1,43 @@
+// Multi dimensional arrays
+
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+class MultiDimArray {
+ public static void main(String[] args){
+    int firstArray[][]={{00,01,02,03},{10,11,12,13}};
+    int secondArray[][]={{30,31,32,33},{40},{4,5,6}};
+   
+    System.out.println("First array");
+    display(firstArray);
+   
+    System.out.println("Second array");
+    display(secondArray);
+  }
+  
+  public static void display(int[][] a){
+    for(int row = 0; row < a.length; row++){
+      for(int col = 0; col < a[row].length; col++){
+        System.out.print(a[row][col]+"\t");
+        
+      }
+      System.out.println();
+    }
+  }
+}
+
+
+
+/* OUTPUT
+
+First array 
+0       1       2       3 
+10      11      12      13 
+Second array 
+30      31      32      33 
+40 
+4       5       6 
+
+
+*/
